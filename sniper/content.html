@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<!--
+ * Copyright (c) 2010 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+-->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="popup.css">
+<script src="popup.js"></script>
+</head>
+<body>
+
+<div id="container">
+<div class="timingConfig">
+  <span>定时到</span>
+  <input id="timingDate" width="100" type="text"	>
+  <button type="button  id="btnTiming" ">定时执行</button>
+</div>
+<div class="execConfig">
+  <span>执行</span>
+  <input id="execCount" type="text" width="50" > 
+  <span>次,每次间隔</span>
+  <input id="execInterval" type="text" width="50" >
+  <span>毫秒</span>
+  <button type="button  id="btnExec" ">立即执行</button> 
+</div>
+<textarea 	id="elementList"></textarea>
+
+
+</div>
+
+</body>
+</html>

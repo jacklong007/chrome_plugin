@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<!--
+ * Copyright (c) 2010 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+-->
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="timingConfig">
+      <span>定时到</span>
+      <input id="timingHours" type="number" min="0" value="1" placeholder="小时"> <span>时</span>
+      <input id="timingMinute" type="number" min="0" value="1" placeholder="分钟"> <span>分</span>
+      <input id="timingSecends" type="number" min="0" value="1" placeholder="秒"> <span>秒</span>
+      <input id="timingMs" type="number" min="0" value="10" placeholder="毫秒"> <span>毫秒</span>
+      <!-- <input id="timingDate" width="100" type="text" value='22,11,11,111' placeholder="依次为需要定时执行的时分秒毫秒,用,分隔"> -->
+      <button type="button" id="btnTiming">定时</button>
+    </div>
+    <div class="execConfig">
+      <span>执行</span>
+      <input id="execCount" type="number" min="1"  value='1'>
+      <span>次,每次间隔</span>
+      <input id="execInterval" type="number" min="1" value="20">
+      <span>毫秒</span>
+      <button type="button" id="btnExec">立即执行</button>
+    </div>
+    <div class="circleDiv">
+      <span>每</span><input id="execCircle" type="number" min="1" value="100"><span>秒,循环</span> <button type="button"
+        id="btnCircle">循环</button>
+    </div>
+    <textarea id="elementList" value='#id' placeholder="元素选择器列表，放置需要点击的元素#id,类名.classname或者标签名tag，多个用空格分离 例如 #id .class span "></textarea>
+
+
+  </div>
+
+</body>
+
+</html>

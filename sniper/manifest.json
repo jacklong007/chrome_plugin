@@ -1,0 +1,21 @@
+{
+  "name": "sniper",
+  "description": "定时点击网页按钮",
+  "version": "0.0.1",
+  "permissions": ["management","*://*/*"],
+  "browser_action": {
+    "default_icon": "browser_action_icon.png",
+    "default_title": "网页定时点击元素",
+    "default_popup": "popup.html"
+  },
+   "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "face.png"
+  },
+  "manifest_version": 2
+}

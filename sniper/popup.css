@@ -1,0 +1,50 @@
+/* Copyright (c) 2010 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.timingConfig {
+  width: 380px;
+  border-bottom: 1px solid black;
+  padding: 0px 0px 5px 0px;
+}
+
+.timingConfig #timingDate {
+  width: 100px;
+}
+
+#execCount {
+  width: 40px;
+}
+
+#execInterval {
+  width: 60px;
+}
+
+.execConfig,
+.circleDiv {
+  margin: 10px 0px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid black;
+
+}
+
+#execCircle,
+#timingHours,
+#timingMinute,
+#timingSecends,
+#timingMs {
+  width: 40px;
+}
+
+#elementList {
+  width: 350px;
+  margin-top: 5px;
+}
